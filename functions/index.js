@@ -28,7 +28,7 @@ exports.receiveMessage = functions.https.onRequest(async (req, res) => {
     console.log('No such document!');
     } else {
     cors(req, res, () => {
-        // Your response headers here
+        // Your response headers heree
         res.set('Access-Control-Allow-Origin', '*');
         res.json({result: `Message with ID: ${writeResult.id} added.`});
       });  
